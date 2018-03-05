@@ -29,3 +29,8 @@ task day0(type:Exec, dependsOn:build) {
     standardInput = System.in
     commandLine 'kotlin',  '-classpath', './build/libs/kotlin-note.jar', 'Day0Kt'
 }
+
+task day1(type:Exec, dependsOn:build) {
+    standardInput = System.in
+    commandLine 'kotlin',  '-classpath', './build/libs/kotlin-note.jar', 'Day1Kt'
+}
