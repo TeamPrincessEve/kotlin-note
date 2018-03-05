@@ -1,3 +1,4 @@
 fun main(args: Array<String>) {
-    println("Hello, World. from main")
+    println("Check results by running gradlew tasks")
+    println("check build.gradle")
 }

@@ -25,12 +25,19 @@ repositories {
     jcenter()
 }
 
+def _30Days = '30 Days of Code'
+
 task day0(type:Exec, dependsOn:build) {
+    group = _30Days
+    description = "Day 0: Hello, World."
     standardInput = System.in
     commandLine 'kotlin',  '-classpath', './build/libs/kotlin-note.jar', 'Day0Kt'
 }
 
 task day1(type:Exec, dependsOn:build) {
+    group = _30Days
+    description = "Day 1: Data Types"
     standardInput = System.in
     commandLine 'kotlin',  '-classpath', './build/libs/kotlin-note.jar', 'Day1Kt'
 }
+
